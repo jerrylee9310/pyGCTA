@@ -21,3 +21,5 @@ gcta64/*
 # notebooks
 .ipynb_checkpoints/
 
+# tmp
+tmp/*
