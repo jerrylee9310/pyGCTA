@@ -1,0 +1,24 @@
+PLINK v2.0.0-a.7 M1 (1 Sep 2025)
+Options in effect:
+  --bfile /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/bfile/test.majref
+  --freq
+  --out /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/bfile/test.majref
+
+Hostname: JerrysMacPro14.local
+Working directory: /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/notebooks
+Start time: Tue Sep  9 17:00:15 2025
+
+Random number seed: 1757404815
+16384 MiB RAM detected; reserving 8192 MiB for main workspace.
+Using up to 8 compute threads.
+3900 samples (2259 females, 1641 males; 3900 founders) loaded from
+/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/bfile/test.majref.fam.
+985 variants loaded from
+/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/bfile/test.majref.bim.
+Note: No phenotype data present.
+Calculating allele frequencies... done.
+--freq: Allele frequencies (founders only) written to
+/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/bfile/test.majref.afreq
+.
+
+End time: Tue Sep  9 17:00:15 2025

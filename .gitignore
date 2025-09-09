@@ -1,0 +1,23 @@
+# python
+__pycache__/
+*.py[cod]
+
+# gcta64
+gcta64/*
+
+# Cython 
+*.so
+*.cpython-*
+
+# grm files
+*.grm
+*.grm.*
+
+# OS / IDE 
+.DS_Store
+.idea/
+.vscode/
+
+# notebooks
+.ipynb_checkpoints/
+

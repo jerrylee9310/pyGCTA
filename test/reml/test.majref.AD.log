@@ -1,0 +1,72 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.0 Mac
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 16:56:04 KST on Tue Sep 09 2025.
+Hostname: JerrysMacPro14.local
+
+Accepted options:
+--reml
+--mgrm /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/AD.mgrm
+--pheno /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/test.pheno
+--out /Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/reml/test.majref.AD
+--reml-no-constrain
+--reml-no-lrt
+--thread-num 5
+
+Note: the program will be running on 5 threads.
+
+Reading phenotypes from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/test.pheno].
+Non-missing phenotypes of 3900 individuals are included from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/test.pheno].
+
+There are 2 GRM file names specified in the file [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/AD.mgrm].
+Reading the GRM from the 1th file ...
+Reading IDs of the GRM from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.add.grm.id].
+3900 IDs are read from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.add.grm.id].
+Reading the GRM from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.add.grm.bin].
+GRM for 3900 individuals are included from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.add.grm.bin].
+Reading the GRM from the 2th file ...
+Reading IDs of the GRM from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.dom.grm.id].
+3900 IDs are read from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.dom.grm.id].
+Reading the GRM from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.dom.grm.bin].
+GRM for 3900 individuals are included from [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/grm/test.majref.dom.grm.bin].
+3900 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+3900 observations, 1 fixed effect(s), and 3 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.335932 0.329361 0.344492
+logL: -964.515
+Running AI-REML algorithm ...
+Iter.	logL	V(G1)	V(G2)	V(e)	
+1	-962.74	0.34247	0.31681	0.34654	
+2	-961.70	0.34712	0.30881	0.34795	
+3	-961.24	0.35039	0.30359	0.34891	
+4	-961.03	0.35761	0.29266	0.35100	
+5	-960.85	0.35773	0.29305	0.35098	
+6	-960.85	0.35773	0.29304	0.35098	
+7	-960.85	0.35773	0.29304	0.35098	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G1)	0.357730	0.027800
+V(G2)	0.293042	0.020647
+V(e)	0.350981	0.009886
+Vp	1.001753	0.034193
+V(G1)/Vp	0.357104	0.019840
+V(G2)/Vp	0.292529	0.017140
+
+Sum of V(G)/Vp	0.649633	0.014680
+
+Sampling variance/covariance of the estimates of variance components:
+7.728322e-04	-1.789059e-06	-3.328322e-05	
+-1.789059e-06	4.262874e-04	-2.876074e-05	
+-3.328322e-05	-2.876074e-05	9.773699e-05	
+
+Summary result of REML analysis has been saved in the file [/Users/jerry/Documents/JerryProject/1.Project/Factor/Analysis/src/pyGCTA/test/reml/test.majref.AD.hsq].
+
+Analysis finished at 16:56:10 KST on Tue Sep 09 2025
+Overall computational time: 5.79 sec.

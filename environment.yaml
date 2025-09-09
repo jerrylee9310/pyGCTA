@@ -1,0 +1,39 @@
+name: pygcta
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # ---- Core environment ----
+  - python=3.9            # Python version
+
+  # ---- Scientific computing ----
+  - numpy<2               # Prevent NumPy 2.x compatibility issues
+  - pandas>=1.3.0
+  - scipy>=1.7.0
+  - statsmodels           # For statistical modeling
+  - patsy                 # Required by statsmodels
+
+  # ---- Performance optimization ----
+  - numba>=0.56.0         # JIT compilation
+  - llvmlite              # Required by numba
+
+  # ---- System utilities ----
+  - psutil>=5.8.0         # System monitoring
+  - tqdm>=4.62.0          # Progress bars
+
+  # ---- Visualization ----
+  - matplotlib>=3.5.0
+  - seaborn>=0.11.0
+
+  # ---- Jupyter environment ----
+  - jupyter>=1.0.0
+  - notebook>=6.4.0
+  - ipykernel>=6.0.0
+  - ipywidgets            # Optional: interactive widgets
+
+  # ---- pip-only packages ----
+  - pip
+  - pip:
+      - ipynbname==2025.8.0.0
+      - tabulate==0.9.0
+      # Add any additional pip-only packages here if needed
