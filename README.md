@@ -42,7 +42,45 @@
 Follow the preprocessing pipeline in `notebooks/plink.ipynb` to prepare your input bfiles.
 
 ### 2. Create Factor GRMs and Perform REML Analysis
-Refer to `notebooks/basic_usage.ipynb` for detailed instructions on creating Factor GRMs and running REML analysis.
+```python
+from gcta import GCTA
+
+gcta = GCTA()
+
+# Compute GRM
+gcta.calculate_grm(
+   bfile="<plink-bfile-header>",
+   standardization="factor",
+   afreq="<plink-afreq-file>",
+   maf_threshold=0.01,
+)
+
+# Save GRM
+gcta.save_grm(out_prefix="<output-file>")
+```
+Refer to `notebooks/basic_usage.ipynb` for detailed instructions on creating Factor GRMs.
+
+### 3. Perform REML Analysis
+You can perform REML analysis in two ways:  
+1. **Externally**: Run REML analysis using GCTA outside this package and use `pyGCTA` to parse the results.  
+2. **Internally**: Provide the path to the GCTA executable, and `pyGCTA` will handle the REML execution for you.
+
+```python
+from gcta import GCTA
+
+gcta = GCTA()
+
+# run REML
+gcta.reml(
+   gcta_path="<gcta-path>",
+   mgrm_file="<mgrm-file>", # V1: hetero-grm, V2:hetero-homo-grm, V3: homo-grm
+   phenotype_file="<phenotype-file>",
+   out_prefix="<output-prefix>",
+)
+
+# compute h2 and other parameters based on delta methods
+df_hsqF = gcta.load_factor_hsq(".hsq-file", save=True)
+```
 
 ---
 
